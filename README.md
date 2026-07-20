@@ -87,7 +87,7 @@ If the compiler reports missing standard C++ headers (for example, `cmath` not f
 xcode-select --install
 ```
 
-### VS Code / Cursor Task
+### VS Code Task
 
 Use the provided task:
 
