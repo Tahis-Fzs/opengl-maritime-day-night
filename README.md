@@ -152,6 +152,16 @@ cd opengl-maritime-day-night
 
 ---
 
+
+## Team
+
+Computer Graphics lab project · **Daffodil International University**
+
+| Member | ID |
+|--------|-----|
+| Md. Shadman Hasin | 0242220005101462 |
+| Md. Shadman Tahsin | 0242220005101461 |
+
 ## License
 
 Choose a license before public reuse if needed. For a course lab, leaving the repository unlicensed (or adding MIT) is typical.
