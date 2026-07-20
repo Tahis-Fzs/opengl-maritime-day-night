@@ -1,0 +1,49 @@
+{
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "OpenGL/GLUT: build active file",
+            "command": "/usr/bin/clang++",
+            "args": [
+                "-std=c++17",
+                "-fcolor-diagnostics",
+                "-fansi-escape-codes",
+                "-g",
+                "${file}",
+                "-o",
+                "${fileDirname}/${fileBasenameNoExtension}",
+                "-isystem",
+                "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1",
+                "-framework",
+                "OpenGL",
+                "-framework",
+                "GLUT"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "Build a C++ OpenGL/GLUT source file on macOS."
+        },
+        {
+            "type": "shell",
+            "label": "OpenGL/GLUT: build+run active file",
+            "command": "./${fileBasenameNoExtension}",
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "dependsOn": [
+                "OpenGL/GLUT: build active file"
+            ],
+            "dependsOrder": "sequence",
+            "detail": "Build then run the OpenGL/GLUT app."
+        }
+    ],
+    "version": "2.0.0"
+}
