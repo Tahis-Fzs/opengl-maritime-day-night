@@ -48,7 +48,7 @@ opengl-maritime-day-night/
 ├── main.cpp                 # Full scene, animation, lighting, callbacks
 ├── .gitignore
 └── .vscode/
-    ├── tasks.json           # Build+run task for VS Code / Cursor
+    ├── tasks.json           # Build+run task for VS Code
     └── launch.json
 ```
 
